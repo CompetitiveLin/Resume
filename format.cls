@@ -1,7 +1,5 @@
 \documentclass[11pt]{article}
 \usepackage[paper=a4paper,left=24mm,right=24mm,top=20mm,bottom=20mm]{geometry}
-
-%\usepackage[english, ngerman]{babel}
 \usepackage[slantfont,boldfont]{xeCJK}
 \usepackage{amsmath}                                % For textit, textbf, etc
 \usepackage{graphicx}                               % For includegraphics
@@ -33,27 +31,27 @@
 %%% Custom sectioning (sectsty package)
 \usepackage{sectsty}
 \sectionfont{%			                            % Change font of \section command		                
-	\sectionrule{0pt}{0pt}{-10pt}{1pt}
+	\sectionrule{0pt}{0pt}{-4pt}{1pt}
 }
 \subsectionfont{%			                        % Change font of \subsection command	                
 	%\sectionrule{0pt}{0pt}{-10pt}{1pt}
 }
 
 %%% Macros
-\newcommand{\sepspace}{\vspace*{1em}}		        % Vertical space macro
-\newcommand{\NewPart}[1]{
+\newcommand{\newpart}[1]{
 	\vspace*{-0.3cm}
 	\section*{#1}
 }
-\newcommand{\NewSubPart}[1]{\subsection*{#1}}
+\newcommand{\newsubpart}[1]{\subsection*{#1}}
 
-\newcommand{\MyName}[1]{
+\newcommand{\name}[1]{
     \begin{center}
 		\yihao #1       % Name
 	\end{center}
 }
 
-\newcommand{\BasicInfo}[1]{
+
+\newcommand{\info}[1]{
 	\noindent
 	\vspace*{-1.0cm}
 	\begin{center}
@@ -61,34 +59,19 @@
 	\end{center}
 }
 
-\newcommand{\Timestamp}[3]{
+\newcommand{\experience}[3]{
 	\noindent
 	\text{#1} \text{#2} \hfill \text{#3}
 	\vspace{0.5em}
 	\par
 }
 
-\newcommand{\Postgraduate}[5]{
-    \noindent
-	\textbf{#2}                                     % School
-	\hspace{0.1em}
-	\text{#3}                                   	% Degree
-	\hspace{0.1em}
-	\text{#4} \hfill \text{#1}
-	\begin{itemize}									% Description
-		\item \text{#5}
-	\end{itemize}
-}
-
-\newcommand{\Undergraduate}[6]{
+\newcommand{\education}[4]{
 	\noindent
-	\textbf{#2}                                     % School
+	\textbf{#1}                                     % School
 	\hspace{0.1em}
-	\text{#3}                                   	% Degree
+	\text{#2}                                   	% Degree
 	\hspace{0.1em}
-	\text{#4} \hfill \text{#1}
-	\begin{itemize}									% Description
-		\item \text{#5}
-		\item \text{#6}
-	\end{itemize}
+	\text{#3} \hfill \text{#4}
+	\par
 }
