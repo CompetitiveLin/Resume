@@ -1,0 +1,132 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItems}[2]{
+    \item #1 \hfill #2 \\
+}
+
+\newcommand{\resumeHeading}[3]{
+    \vspace{-1pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{https://CompetitiveLin.github.io/}{\Large Ze Lin}} & Email : \href{mailto:zee\_lin@foxmail.com}{zee\_lin@foxmail.com}\\
+    \href{https://CompetitiveLin.github.io/}{https://CompetitiveLin.github.io} & Mobile : \href{tel:+8619370575110}{+86-19370575110} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+    \resumeListStart
+        \resumeHeading{East China Normal University}{Sept. 2022 -- Present}
+        %   {Master of Engineering in Software Engineering;  GPA: 4.00}{Sept. 2022 -- Present}
+        {Candidate for M.E. in Software Engineering degree candidate, expected to graduate in July 2025}
+        \resumeHeading{Zhejiang University of Technology}{Sept. 2018 -- Jul. 2022}
+        {B.E. in Computer Science and Technology, GPA: 3.54 (rank: 5/112)}
+    \resumeListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+    \resumeListStart
+        \item \textbf{Languages}{: Java, Python, C++, LaTex}
+        \item \textbf{Technologies}{: SpringBoot, Git, Redis, Mybatis-plus, MySQL}
+    \resumeListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \resumeListStart
+        \resumeItems{\textbf{MOGU INC, Reptile Engineer}}{Nov. 2021 - Feb. 2022}
+        \vspace*{1mm}
+        {According the rule of XPath postioning, crawling SKU data of each commodity in foreign online-shopping websites based on Scrapy framework with Python.}
+   \resumeListEnd
+
+
+%-----------AWARDS-----------------
+\section{Awards}
+    \resumeListStart
+        \resumeItems{\textbf{Champion} of 3D recognition in Advanced Vision Competition of 2020 China Robot Competition}{Nov. 2020}
+        \resumeItems{\textbf{Champion} of 3D measurement in Advanced Vision Competition of 2020 China Robot Competition}{Nov. 2020}
+        \resumeItems{\textbf{National First Prize} of the 16th National University Students Intelligent Car Race}{Aug. 2021}
+        \resumeItems{\textbf{Bronze Award} of the 7th China International College Students' "Internet+" Innovation and Entrepreneurship Competition}{Oct. 2021}
+    \resumeListEnd
+
+
+  %-----------PROJECTS-----------------
+\section{Projects}
+    \resumeListStart
+        \resumeItems
+        {\textbf{Detection and warning system of helmet wearing based on computer vision}}
+        {Nov 2021 - Feb 2022}
+        \vspace*{1mm}
+        {Based on Yolov3 algorithm framework, pruning and distillation were deployed on the local server and real-time alarm information was updated to the cloud server.}
+    \resumeListEnd
+
+
+%--------OTHERS------------
+\section{Others}
+    \resumeListStart
+        \item \textbf{English Ability}{: CET-4: 536, CET-6: 516}
+    \resumeListEnd
+
+\end{document}
